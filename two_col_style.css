@@ -1,0 +1,62 @@
+/**Layout for 2 column site
+
+/** only difference from one column is you add container and copy/paste attributes in the section and put in the container then add new section attributes
+
+/**start by zeroing out body- margin and padding
+/**/
+body {*/
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  width: 100%;
+  background-color: black;
+}
+/** when you inspect element, zeroing out the nav ul will remove the orange around the navs
+/**/
+
+/**the space btw nav and ul means that all the ul in the nav header/footer will be affected
+/**/
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+ /**styling only the li elements in the nav
+ /**/
+nav li {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: red;
+}
+/** use the carrot to only affect the a links in the li --the li may eventually have other child elements like an img that you don't want to affect /
+/**/
+nav li > a{
+  text-decoration: none;
+  color: white;
+}
+nav li:hover {
+  background-color: red;
+}
+/**  margin: 0 auto with center everything within whatever width you give
+/**/
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: yellow;
+}
+/**  use vertical-align so that if you have more content in one section it lines up at the top
+/**/
+section {
+  border: 1px black;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+
+}
+.col2 {
+  vertical-align: top;
+  background-color: green;
+  display: inline-block;
+  width:49%;
+}
